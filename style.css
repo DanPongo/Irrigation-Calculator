@@ -1,0 +1,32 @@
+.container {
+    width: 80%;
+    margin: auto;
+}
+.title {
+    font-size: 2.5em; /* Adjust this value to increase or decrease the size */
+  }
+  
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.form-control {
+    width: 35%;
+}
+
+.info-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #info-img {
+    width: 38px; /* Adjust this as needed */
+    height: 38px; /* Adjust this as needed */
+  }
+  

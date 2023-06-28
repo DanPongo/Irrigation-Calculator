@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Irrigation calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-whatsapp"></i>
+    <i class="fa-solid fa-file-lines fa-xl"></i>
+    <div class="container">
+      <h1 class="text-center">
+        Agriculture Irrigation Calculator  
+        <i class="fa-solid fa-faucet-drip"></i>
+      </h1>
+      <br>
+       <h5 class="text-center">
+        Adapted to your crop geographically and seasonally </h5>
+      <br /><br /><br><br>
+      <h6>Enter your crop Data:</h6>
+      <br>
+      <div class="row"> <!-- Bootstrap row class creates a horizontal row to contain columns -->
+        <div class="col-6"> <!-- Bootstrap column class. col-6 means this column will take up half the row's width on all screen sizes -->
+          <form id="irrigation-form">
+            <div class="form-group">
+              <label for="geographicArea">Geographic Area <i class="fa-regular fa-compass"></i></label>
+              <select class="form-control" id="geographicArea">
+                <option>North</option>
+                <option>Central</option>
+                <option>South</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="vegetableType">Crops Type <i class="fa-solid fa-seedling"></i></label>
+              <select class="form-control" id="vegetableType">
+                <option>Carrots</option>
+                <option>Broccoli</option>
+                <option>Tomato</option>
+                <option>Cucumber</option>
+                <option>Lettuce</option>
+                <option>Spinach</option>
+                <option>Zucchini</option>
+                <option>Onion</option>
+                <option>Peas</option>
+                <option>Bell Pepper</option>
+                <option>Corn</option>
+                <option>Eggplant</option>
+                <option>Cabbage</option>
+                <option>Cauliflower</option>
+                <option>Radish</option>
+                <option>Kale</option>
+                <option>Beetroot</option>
+                <option>Pumpkin</option>
+                <option>Swiss Chard</option>
+                <option>Turnip</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fieldArea">Square Meters  <i class="fa-solid fa-ruler"></i></label>
+              <input type="number" class="form-control" id="fieldArea" />
+            </div>
+            <button type="submit" class="btn btn-primary">Calculate</button>
+            <button type="reset" class="btn btn-secondary">Clean</button>
+          </form>
+        </div>
+        <div class="col-6"> <!-- Another column that also takes up half the row's width -->
+          <div class="info-div">
+            <h6>Local Information</h6>
+            <p>Water rate: 9.059 ₪  <img id="info-img" src="assets/waterSymbol.png" alt="Info image" />
+            </p>           
+          </div>
+        </div>
+      </div>
+      <div class="mt-5">
+        <table class="table table-striped" id="resultTable">
+          <!-- Table structure should be filled by your backend or JavaScript -->
+        </table>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+
+  </body>
+</html>
